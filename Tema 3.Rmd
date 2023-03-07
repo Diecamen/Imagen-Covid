@@ -10,8 +10,9 @@ Primero cargamos las librerías necesarias para hacer el trabajo
 library(ggplot2)
 library(readr)
 ```
+
 Ahora cargamos el paquete de datos necesario que estará en la carpeta del proyecto
 ```{r}
-
+d <- read_csv("owid-covid-data.csv")
 ```
 
