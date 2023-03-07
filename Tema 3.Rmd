@@ -1,0 +1,17 @@
+---
+title: "Imagen Covid"
+author: "Sergio Martín, Sergio Cabral y Diego Camacho"
+date: "2023-03-07"
+output: html_document
+---
+
+Primero cargamos las librerías necesarias para hacer el trabajo
+```{r}
+library(ggplot2)
+library(readr)
+```
+Ahora cargamos el paquete de datos necesario que estará en la carpeta del proyecto
+```{r}
+
+```
+
