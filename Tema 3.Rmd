@@ -16,3 +16,19 @@ Ahora cargamos el paquete de datos necesario que estará en la carpeta del proye
 d <- read_csv("owid-covid-data.csv")
 ```
 
+Ahora haremos la gráfica pedida con las funciones de ggplot2
+
+Empezamos seleccionando los países que utilizaremos en la gráfica
+```{r}
+Japan <- d[d$location == "Japan", ]
+Canada <- d[d$location == "Canada", ]
+Germany <- d[d$location == "Germany", ]
+France <- d[d$location == "France", ]
+US <- d[d$location == "United States", ]
+Italy <- d[d$location == "Italy", ]
+UK <- d[d$location == "United Kingdom", ]
+Spain <- d[d$location == "Spain", ]
+
+paises <- rbind(Japan, Canada, Germany, France, US, Italy, UK, Spain)
+```
+
