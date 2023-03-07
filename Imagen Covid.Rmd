@@ -1,0 +1,7 @@
+---
+title: "Imagen Covid"
+author: ""
+date: "2023-03-07"
+output: html_document
+---
+
