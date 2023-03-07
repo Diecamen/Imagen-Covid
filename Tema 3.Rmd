@@ -29,6 +29,15 @@ Italy <- d[d$location == "Italy", ]
 UK <- d[d$location == "United Kingdom", ]
 Spain <- d[d$location == "Spain", ]
 
-paises <- rbind(Japan, Canada, Germany, France, US, Italy, UK, Spain)
+paises <- rbind(Japan, Canada, Germany, France, US, Italy, UK)
+```
+
+Procedemos a hacer el gráfico
+```{r}
+c <- ggplot(paises, aes(x = date, y = new_deaths_smoothed_per_million, group = location, color = location)) + geom_line()
+
+c1 <- geom_line(data = Spain, aes(x = date, y = new_deaths_smoothed_per_million), color = 'black', size = 1.3)
+
+c + c1
 ```
 
