@@ -38,6 +38,9 @@ c <- ggplot(paises, aes(x = date, y = new_deaths_smoothed_per_million, group = l
 
 c1 <- geom_line(data = Spain, aes(x = date, y = new_deaths_smoothed_per_million), color = 'black', size = 1.3)
 
-c + c1
+c2 <- labs(title = 'Muertes Covid-19 por países (España aparece en negro y más grande)', subtitle ='La gráfica muestra las muertes por cada millón de personas provocadas en ciertos países por el Covid', y = 'Muertes por milón de personas', x = 'Fecha')
+
+grafica <- c + c1 + c2
+grafica
 ```
 
